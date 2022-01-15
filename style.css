@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Josefin+Sans&family=Roboto+Slab&display=swap');
+
+body {
+    font-family: 'IBM Plex Serif', serif;
+    background-color: #f3f1ff;
+}
+
+label #btn,
+label #cancel {
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.icon {
+    margin-right: 30px;
+    margin-top: 5px;
+    color: #E02C6D;
+}
+
+.logo a {
+    color: #E02C6D;
+    font-size: 50px;
+    text-decoration: none;
+    margin-left: 4%;
+
+
+
+}
+
+nav>ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    margin-top: -5%;
+    font-weight: bold;
+
+}
+
+nav li {
+    list-style: none;
+    margin-right: 20px;
+    padding: 0px 10px;
+
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+
+}
+
+
+.banner-part {
+    display: flex;
+}
+
+.welcome {
+    font-size: 40px;
+}
+
+.banner-text {
+    margin-left: 5%;
+
+}
+
+.button {
+    display: flex;
+    background-color: #E02C6D;
+    margin-right: 75%;
+    border-radius: 20px;
+    margin-top: 8%;
+
+}
+
+.arro-icon {
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.lets a {
+    text-decoration: none;
+    padding-left: 50px;
+    color: white;
+    font-size: 20px;
+
+
+
+}
+
+.container {
+    background-color: white;
+    width: 800px;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 21px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section-title {
+    color: blue;
+    font-size: 24px;
+}
+
+
+/*--------------------course----*/
+.courses {
+    /*display: flex;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.course {
+    margin-right: 20px;
+    background-color: #CBF4FA;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+
+}
+
+.course:hover .course-banner {
+    transform: scale(1.5);
+    transition: transform 2s ease-in-out;
+
+}
+
+.course .course-banner img {
+    width: 230px;
+    height: 110px;
+    border-radius: 5px;
+
+}
+
+.course-duration {
+    background-color: rgb(255, 68, 0);
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+
+}
+
+.course-ahoutr {
+    color: navy;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.fa-star.star {
+    color: #e9a411;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.empty {
+    color: #c5c2b8;
+}
+
+.social img {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.last-section {
+    display: flex;
+}
+
+.footer {
+    background-color: rgb(12, 11, 53);
+    height: 250px;
+    width: 1100x;
+}
+
+.footer-text {
+    color: white;
+    padding-top: 1%;
+
+}
+
+.sociali {
+    margin-right: 8px;
+}
+
+/*-------------mobile device----------*/
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 100%;
+
+    }
+
+    nav {
+        background-color: #e9a411;
+    }
+
+    .logo {
+        padding-left: 40px;
+    }
+
+    nav ul {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 560px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .courses {
+        background-color: orangered;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 20px;
+        padding-bottom: 20px;
+        border-radius: 10px;
+    }
+
+
+    .banner-part {
+        flex-direction: column;
+    }
+
+    .banner-img img {
+        margin-left: -200px;
+    }
+
+    .last-section-img img {
+        margin-left: -220px;
+    }
+
+    .button {
+        margin-right: 200px;
+        margin-left: -10px;
+    }
+
+    .last-section {
+        flex-direction: column;
+    }
+}
+
+/**----tablet devices----*/
+@media only screen and (min-width:688px) and (max-width:992px) {
+
+    .container {
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    ul li a {
+        font-size: 17px;
+    }
+
+    ul li {
+        margin-top: 50px;
+        padding: 1px;
+
+    }
+
+    ul {
+        background-color: chocolate;
+        height: 30px;
+        width: 100%;
+        margin-top: 150px;
+        margin-bottom: 40px;
+
+    }
+
+    .logo {
+        margin-bottom: 40px;
+    }
+
+    .banner-part {
+        flex-direction: column;
+    }
+
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 20px;
+        padding-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    .last-section {
+        flex-direction: column;
+    }
+
+    .icon {
+        color: white;
+    }
+}
